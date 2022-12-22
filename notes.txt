@@ -29,6 +29,7 @@ jab koi javascript ka code function mai nahi hota, vo global scope/ global memor
 
  Conclusion : Humare code mai pehli line bhi execute hone se pehle humara code compile hota hai 
 
+--------------------------------------------------
 
 2 ---> Execution Phase 
 
@@ -37,7 +38,7 @@ In JS , code executes inside execution context (matlab code execute hone ke lie 
 Or sabse pehle jo execution context create hota hai usse ham kehte hai Global execution context
 
 Global execution context (Also has 2 phase)
-------> Creation Phase (global execution context ka he Creation phase)
+------> Creation Phase (global execution context ka he Creation phase) ==> Global memory mai kuch variables set ho jate hai  
 ------> Code Execution Phase
 
 
@@ -53,3 +54,13 @@ The instantiaion of the scope chain , variable instantiaion and determination of
 > Browser provides asynchronous features to javascript
 
 > synchronous (jab tak ek line execute nahi hoti tab tak dusri line execute nahi ho sakti)
+
+> Global Execution context is added in stack and after execution it gets deleted from the stack
+
+> During the global execution context creation process javascript stores the variables in object in key value pair form, which is known as Global Environment record (concept samajh lena bss jyada chinta math karna!)
+
+> (TDZ) Temporal Dead Zone learned in hoisting part 
+
+
+
+
