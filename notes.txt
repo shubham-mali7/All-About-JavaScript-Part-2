@@ -1,0 +1,55 @@
+How Javascript works ?
+
+Compilation , Code Execution 
+What is global execution context ?
+What is local execution context  ?
+
+
+1)------> 1st thing which happens in js is Compilation 
+2)------> 2nd Execution 
+
+Why compilation ?
+Compilation Phase / Parsing Phase
+--> Tokanizing/Lexing ==> Code ko chote chote chunks mai tod dete hai 
+--> Parsing ==> Jo chote chunks hai unko samajh ke Abstract Syntax Tree banta hai 
+--> Code Generation ==> Abstract syntax Tree ke madat se executable format mai code generate hota hai jise hum execute kar sakte hai
+
+Compilation is important for 2 resons:
+1 Early error checking 
+2 Determining appropriate scope for variables before executing 
+--------> To fulfill the above conditions it is must to parse the code before executing <---------
+
+ Browser wants our code to be more optimized so it compiles and also recompiles sometime
+
+Why Parsing ?
+taake hame patah chal sake ki konsa variable kaha belong karta hai ,kis scope mai belong karta hai , kaha pai uski jagah hai , kaha tak ham usse access kar sakte hai (Toh ye sabh parsing ki madat se code ko execute karnese pehle he decide ho chuka hota hai or javascript ko pata chal chuka hota hai )
+
+jab koi javascript ka code function mai nahi hota, vo global scope/ global memory mai hota hai 
+
+
+ Conclusion : Humare code mai pehli line bhi execute hone se pehle humara code compile hota hai 
+
+
+2 ---> Execution Phase 
+
+In JS , code executes inside execution context (matlab code execute hone ke lie hame execution context create karna hoga )
+
+Or sabse pehle jo execution context create hota hai usse ham kehte hai Global execution context
+
+Global execution context (Also has 2 phase)
+------> Creation Phase (global execution context ka he Creation phase)
+------> Code Execution Phase
+
+
+When control enters an execution context , the scope chain is created and initialised , variable instantiaion is performed (matlab variable create honge), and the 'this' value is determined (from official documentation of ecmaScript)
+
+The instantiaion of the scope chain , variable instantiaion and determination of the 'this' value depend on the type of code being enetered
+
+> window is the global object and it is provided by the Browser
+
+> Javascript is a synchronous programming language and is single threaded
+(jab tak ek line execute nahi hojati tab tak thread dusri line par move nahi karega)
+
+> Browser provides asynchronous features to javascript
+
+> synchronous (jab tak ek line execute nahi hoti tab tak dusri line execute nahi ho sakti)
