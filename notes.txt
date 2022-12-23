@@ -38,7 +38,7 @@ In JS , code executes inside execution context (matlab code execute hone ke lie 
 Or sabse pehle jo execution context create hota hai usse ham kehte hai Global execution context
 
 Global execution context (Also has 2 phase)
-------> Creation Phase (global execution context ka he Creation phase) ==> Global memory mai kuch variables set ho jate hai  
+------> Creation Phase (global execution context ka he Creation phase) ==> Global memory mai kuch variables set ho jate hai also known as memory creation phase.
 ------> Code Execution Phase
 
 
@@ -62,5 +62,19 @@ The instantiaion of the scope chain , variable instantiaion and determination of
 > (TDZ) Temporal Dead Zone learned in hoisting part 
 
 
+> Execution context are of 2 types :
+1. Global Execution Context
+2. Function Execution Context
 
 
+> Compilation ke dauran JS variables create nahi karta vo bas information rakhta hai ki konsa variable konse scope mai belong karta hai.
+
+> JS mai ek aur cheez hoti hai ye dekhne kelie ki humara konsa execution context chalraha hai uskelie js 'call stck' maintain karti hai 
+
+> JS mai jab bhi hum koi bhi function call karenge tabhi ek naya execution context create hoega or usse hum bolenge 'Function Execution Context' (1:21:05) 
+
+Function Execution Phase:
+1. Local Memory creation phase
+2. Code Execution Phase
+
+Array like object : object which is not array but is like an jiske paas index property hoti hai or length property hoti hai, for example strings 
