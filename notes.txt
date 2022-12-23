@@ -1,6 +1,7 @@
 How Javascript works ?
 
 Compilation , Code Execution 
+
 What is global execution context ?
 What is local execution context  ?
 
@@ -59,7 +60,7 @@ The instantiaion of the scope chain , variable instantiaion and determination of
 
 > During the global execution context creation process javascript stores the variables in object in key value pair form, which is known as Global Environment record (concept samajh lena bss jyada chinta math karna!)
 
-> (TDZ) Temporal Dead Zone learned in hoisting part 
+> (TDZ) ===> Temporal Dead Zone learned in hoisting part 
 
 
 > Execution context are of 2 types :
@@ -78,3 +79,5 @@ Function Execution Phase:
 2. Code Execution Phase
 
 Array like object : object which is not array but is like an jiske paas index property hoti hai or length property hoti hai, for example strings 
+
+lexical Environment : an item's lexical scope is the place in which the item got created.
