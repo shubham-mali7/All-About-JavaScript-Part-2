@@ -81,3 +81,15 @@ Function Execution Phase:
 Array like object : object which is not array but is like an jiske paas index property hoti hai or length property hoti hai, for example strings 
 
 lexical Environment : an item's lexical scope is the place in which the item got created.
+
+3 Types of Scopes:
+Block scope.
+Function scope.
+Global Scope.
+
+----------------------------------------------------------------
+
+Closure:  Jab Function kisi aur function se return hota hai toh vo apne sath jo uske local memory ke variables hai unko sath leke return hota hai
+
+Closure Google baba ki bhasha mai :
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. 
